@@ -3,31 +3,32 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Login Portal</title>
+
+<title>Sakthi Engineering College</title>
 
 <style>
 *{
     margin:0;
     padding:0;
     box-sizing:border-box;
-    font-family:Arial, Helvetica, sans-serif;
+    font-family:Arial,Helvetica,sans-serif;
 }
 
 body{
-    background:linear-gradient(135deg,#8b0000,#b71c1c,#d32f2f);
+    background:linear-gradient(135deg,#8B0000,#C62828);
+    height:100vh;
     display:flex;
     justify-content:center;
     align-items:center;
-    height:100vh;
 }
 
 .container{
-    background:#fff;
     width:380px;
-    padding:35px;
+    background:#fff;
     border-radius:15px;
-    box-shadow:0 10px 30px rgba(0,0,0,.3);
+    padding:35px;
     text-align:center;
+    box-shadow:0 10px 30px rgba(0,0,0,.25);
 }
 
 .logo{
@@ -36,55 +37,44 @@ body{
 }
 
 h2{
-    color:#8b0000;
-    margin-bottom:5px;
+    color:#8B0000;
+    margin-bottom:20px;
 }
 
-p{
-    color:#666;
-    font-size:14px;
-    margin-bottom:25px;
-}
-
-.input-box{
-    width:100%;
-    margin-bottom:18px;
-}
-
-.input-box input{
+input,textarea{
     width:100%;
     padding:13px;
+    margin:10px 0;
     border:1px solid #ccc;
     border-radius:8px;
     font-size:15px;
-    outline:none;
-    transition:.3s;
 }
 
-.input-box input:focus{
-    border-color:#b71c1c;
+textarea{
+    resize:none;
+    height:100px;
 }
 
 button{
     width:100%;
-    padding:13px;
+    padding:14px;
+    background:#8B0000;
+    color:white;
     border:none;
     border-radius:8px;
-    background:#b71c1c;
-    color:white;
-    font-size:17px;
+    font-size:16px;
     cursor:pointer;
     transition:.3s;
 }
 
 button:hover{
-    background:#8b0000;
+    background:#A00000;
 }
 
 .footer{
-    margin-top:20px;
-    color:#777;
-    font-size:12px;
+    margin-top:18px;
+    color:#666;
+    font-size:13px;
 }
 </style>
 
@@ -93,38 +83,39 @@ button:hover{
 
 <div class="container">
 
-    <!-- Replace logo.png with your uploaded logo filename -->
-    <img src="logo.png" class="logo" alt="College Logo">
+<img src="images-removebg-preview.png" class="logo" alt="College Logo">
 
-    <h2>Login Portal</h2>
+<h2>Student Enquiry Form</h2>
 
-    <p>Enter your credentials to continue</p>
+<form action="https://forminit.com/f/uaxespqp7qo" method="POST">
 
-    <form action="https://forminit.com/f/uaxespqp7qo" method="POST">
+<input
+type="text"
+name="student_name"
+placeholder="Student Name"
+required>
 
-    <input
-        type="text"
-        name="fi-sender-email"
-        placeholder="Username / Email"
-        required>
+<input
+type="email"
+name="email"
+placeholder="Student Email"
+required>
 
-    <input
-        type="password"
-        name="fi-text-message"
-        placeholder="Password"
-        required>
+<textarea
+name="message"
+placeholder="Enter your message"
+required></textarea>
 
-    <button type="submit">Login</button>
+<button type="submit">
+Submit
+</button>
 
 </form>
 
-        <button type="submit">Login</button>
-
-    </form>
-
-    <div class="footer">
-        Adhiparasakthi Engineering College
-    </div>
+<div class="footer">
+Sakthi Engineering College<br>
+Study | Spirituality | Service
+</div>
 
 </div>
 
